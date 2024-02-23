@@ -821,9 +821,10 @@ Rwcs_keypass=function(keyvalues=NULL,
       } else{
         if (!is.null(keyvalues$EPOCH)) {
           EQUINOX = keyvalues$EPOCH
-        }else{
-          message('EQUINOX is not defined (also no EPOCH)!')
         }
+        #else{
+        #  message('EQUINOX is not defined (also no EPOCH)!') # I'm OK with this for our HSC/VISTA headers.
+        #}
       }
     }
     if(CUNIT1=='        '){
